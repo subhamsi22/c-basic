@@ -1,0 +1,28 @@
+// write a  abbervation of name in c code
+#include<stdio.h>
+#include<string.h>
+void main(){
+    char n[20];
+    int in;
+    
+    printf("enter the word: ");
+    fgets(n,sizeof(n),stdin);
+    int s = strlen(n);
+    printf("%c",n[0]);
+    for(int i=0;i<=s;i++){
+        if(n[i-1]==' '){
+            printf("%c",n[i]);
+            in =i;
+            break;
+        }
+    }
+    for(int j=in+1;j<=s;j++){
+        if(n[j-1]==' '){
+            in =j;
+            break;
+        }
+    }
+    for(int k=in;k<=s;k++){
+        printf("%c",n[k]);
+    }
+}
