@@ -1,0 +1,4 @@
+project that i have to learn 
+1.plaindrome.c
+2.armstrong.c
+3.neon.c
